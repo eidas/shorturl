@@ -1,0 +1,40 @@
+{
+  "urls": {
+    "github": {
+      "url": "https://github.com/eidas/shorturl",
+      "description": "このリポジトリへのリンク",
+      "created": "2025-10-29T00:00:00Z",
+      "tags": ["公式", "リポジトリ"],
+      "enabled": true,
+      "metadata": {
+        "title": "GitHubリポジトリ",
+        "image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+        "customRedirectDelay": 0
+      }
+    },
+    "google": {
+      "url": "https://www.google.com/",
+      "description": "Google検索ページ",
+      "created": "2025-10-29T00:00:00Z",
+      "tags": ["検索", "外部"],
+      "enabled": true,
+      "metadata": {
+        "title": "Google",
+        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+        "customRedirectDelay": 0
+      }
+    },
+    "sample": {
+      "url": "https://example.com/",
+      "description": "サンプル用短縮URL",
+      "created": "2025-10-29T00:00:00Z",
+      "tags": ["サンプル"],
+      "enabled": false,
+      "metadata": {
+        "title": "Example",
+        "image": "https://via.placeholder.com/150",
+        "customRedirectDelay": 2
+      }
+    }
+  }
+}

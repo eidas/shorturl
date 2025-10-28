@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ShortURL Site Config Schema",
+  "type": "object",
+  "properties": {
+    "site": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "baseUrl": { "type": "string", "format": "uri" },
+        "author": { "type": "string" },
+        "analytics": {
+          "type": "object",
+          "properties": {
+            "googleAnalyticsId": { "type": "string" },
+            "enabled": { "type": "boolean" }
+          },
+          "required": ["enabled"],
+          "additionalProperties": false
+        },
+        "theme": {
+          "type": "object",
+          "properties": {
+            "primaryColor": { "type": "string" },
+            "backgroundColor": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "features": {
+          "type": "object",
+          "properties": {
+            "showUrlList": { "type": "boolean" },
+            "enableQrCode": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": ["title", "description", "baseUrl", "author", "analytics", "theme", "features"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["site"],
+  "additionalProperties": false
+}

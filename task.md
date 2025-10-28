@@ -44,25 +44,25 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
 ## フェーズ2: 設定ファイルの実装
 
 ### タスク2.1: JSONスキーマ定義
-- [ ] urls.jsonのJSONスキーマファイル作成
+- [x] urls.jsonのJSONスキーマファイル作成
   - スキーマファイル: config/schemas/urls.schema.json
   - 必須フィールド、任意フィールドの定義
   - データ型、フォーマット制約の定義
-- [ ] site.jsonのJSONスキーマファイル作成
+- [x] site.jsonのJSONスキーマファイル作成
   - スキーマファイル: config/schemas/site.schema.json
   - サイト設定のスキーマ定義
 
 ### タスク2.2: 設定ファイルのサンプル作成
-- [ ] config/urls.json のサンプル作成
+- [x] config/urls.json のサンプル作成
   - 2-3個のサンプルURL定義
   - 全フィールドの使用例を含む
-- [ ] config/site.json のサンプル作成
+- [x] config/site.json のサンプル作成
   - サイト基本情報
   - テーマ設定
   - アナリティクス設定（デフォルトは無効）
 
 ### タスク2.3: 予約語リストの定義
-- [ ] 予約語リストファイルの作成
+- [x] 予約語リストファイルの作成
   - config/reserved-keys.json
   - 禁止される短縮キーのリスト
     - index, assets, config, api, admin等

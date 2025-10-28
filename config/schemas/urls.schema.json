@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ShortURL URL Mapping Schema",
+  "type": "object",
+  "properties": {
+    "urls": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9_-]{1,50}$": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            },
+            "description": {
+              "type": "string"
+            },
+            "created": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "tags": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "image": { "type": "string", "format": "uri" },
+                "customRedirectDelay": { "type": "number", "minimum": 0 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": ["url"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["urls"],
+  "additionalProperties": false
+}
