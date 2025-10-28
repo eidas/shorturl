@@ -1,0 +1,12 @@
+{
+  "name": "shorturl",
+  "version": "1.0.0",
+  "description": "GitHub Pages上で動作する静的な短縮URLサービス",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": ["shorturl", "github-pages", "static-site"],
+  "author": "",
+  "license": "MIT"
+}
