@@ -8,7 +8,7 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
 ## フェーズ1: プロジェクト初期セットアップ
 
 ### タスク1.1: プロジェクト環境構築
-- [ ] GitHubリポジトリの作成
+- [x] GitHubリポジトリの作成
 - [x] ローカル開発環境のセットアップ
 - [x] Node.js/npm環境の確認（推奨: Node.js 18以上）
 - [x] package.jsonの作成と初期設定
@@ -20,7 +20,7 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
   - 一時ファイル等
 
 ### タスク1.2: ディレクトリ構造の作成
-- [ ] ルートディレクトリに以下のフォルダを作成:
+- [x] ルートディレクトリに以下のフォルダを作成:
   - .github/workflows/
   - src/templates/
   - src/styles/
@@ -31,13 +31,13 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
   - tests/
 
 ### タスク1.3: 依存パッケージのインストール計画
-- [ ] 必要なnpmパッケージのリストアップ
+- [x] 必要なnpmパッケージのリストアップ
   - テンプレートエンジン（例: handlebars, ejs）
   - ファイルシステム操作（fs-extra）
   - バリデーションライブラリ（ajv, validator.js）
   - テストフレームワーク（jest, mocha）
   - ビルドツール（rimraf等）
-- [ ] package.jsonへの依存関係記述
+- [x] package.jsonへの依存関係記述
 
 ---
 
