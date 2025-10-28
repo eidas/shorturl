@@ -1,0 +1,59 @@
+/* redirect.css: リダイレクトページ専用スタイル雛形 */
+
+body {
+  background: #f5f7fa;
+  color: #222;
+  font-family: 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#redirect-message {
+  font-size: 1.3em;
+  margin: 2em 0 1em 0;
+}
+
+#redirect-url {
+  font-size: 1.1em;
+  color: #0078d7;
+  word-break: break-all;
+}
+
+/* ローディングアニメーション */
+#loading {
+  margin: 2em auto;
+  width: 48px;
+  height: 48px;
+  border: 6px solid #eee;
+  border-top: 6px solid #0078d7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* プログレスバー */
+#progress-bar {
+  width: 80%;
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  margin: 2em auto 1em auto;
+  overflow: hidden;
+}
+#progress {
+  height: 100%;
+  width: 0;
+  background: #0078d7;
+  transition: width 0.5s;
+}
+
+/* 情報表示スタイル */
+#info {
+  margin-top: 2em;
+  color: #666;
+  font-size: 0.95em;
+}
