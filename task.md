@@ -127,63 +127,63 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
 ## フェーズ4: テンプレートファイルの作成
 
 ### タスク4.1: redirect.htmlテンプレート
-- [ ] src/templates/redirect.htmlの作成
-- [ ] HTML5基本構造の実装
-- [ ] headセクションの実装
+- [x] src/templates/redirect.htmlの作成
+- [x] HTML5基本構造の実装
+- [x] headセクションの実装
   - meta charset, viewport設定
   - meta refreshタグ（プレースホルダー付き）
   - OGPメタタグ（og:title, og:description, og:image等）
   - canonical URLタグ
   - title要素
-- [ ] bodyセクションの実装
+- [x] bodyセクションの実装
   - リダイレクト中メッセージ表示
   - リダイレクト先URL表示
   - プログレスインジケーター（オプション）
-- [ ] プレースホルダーの設置
+- [x] プレースホルダーの設置
   - {{TARGET_URL}}
   - {{SHORT_KEY}}
   - {{DESCRIPTION}}
   - {{TITLE}}
   - {{OGP_IMAGE}}
   - {{REDIRECT_DELAY}}
-- [ ] インラインJavaScriptエリア
+- [x] インラインJavaScriptエリア
   - redirect.jsの埋め込みエリア
 
 ### タスク4.2: index.htmlテンプレート
-- [ ] src/templates/index.htmlの作成
-- [ ] HTML5基本構造
-- [ ] headセクション
+- [x] src/templates/index.htmlの作成
+- [x] HTML5基本構造
+- [x] headセクション
   - メタタグ、タイトル
   - CSSリンク
-- [ ] ヘッダーセクション
+- [x] ヘッダーセクション
   - サイトタイトル
   - サービス説明
-- [ ] メインコンテンツセクション
+- [x] メインコンテンツセクション
   - URL一覧テーブルまたはカード
   - 検索フィルターUI
   - タグフィルターUI
   - ソート機能UI
-- [ ] 統計情報セクション
+- [x] 統計情報セクション
   - 総URL数表示
   - カテゴリ別統計（タグごと等）
-- [ ] フッターセクション
+- [x] フッターセクション
   - 著作権表示
   - リンク（GitHub、ドキュメント等）
-- [ ] データ埋め込みエリア
+- [x] データ埋め込みエリア
   - URLs配列のJSONデータ埋め込み
 
 ### タスク4.3: 404.htmlテンプレート
-- [ ] src/templates/404.htmlの作成
-- [ ] HTML5基本構造
-- [ ] エラーメッセージセクション
+- [x] src/templates/404.htmlの作成
+- [x] HTML5基本構造
+- [x] エラーメッセージセクション
   - 404エラーの説明
   - ユーザーフレンドリーなメッセージ
-- [ ] ナビゲーションリンク
+- [x] ナビゲーションリンク
   - トップページへのリンク
   - URL一覧へのリンク
-- [ ] 検索・候補提示機能
+- [x] 検索・候補提示機能
   - 類似URLの提案（オプション）
-- [ ] デザイン
+- [x] デザイン
   - エラーページらしい視覚的デザイン
 
 ---

@@ -1,0 +1,24 @@
+<!-- 404.html: エラーページ用テンプレート雛形 -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found - {{SITE_TITLE}}</title>
+  <meta name="description" content="ページが見つかりませんでした">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <main>
+    <h1>404 Not Found</h1>
+    <p>お探しの短縮URLは存在しません。</p>
+    <p><a href="/">トップページへ戻る</a></p>
+    <p><a href="/list">URL一覧を見る</a></p>
+    <!-- 類似URLの提案（オプション） -->
+    {{SUGGESTED_URLS}}
+  </main>
+  <footer>
+    <small>&copy; {{YEAR}} <a href="{{GITHUB_URL}}">GitHub</a></small>
+  </footer>
+</body>
+</html>

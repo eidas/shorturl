@@ -1,0 +1,38 @@
+<!-- index.html: トップページ用テンプレート雛形 -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{SITE_TITLE}}</title>
+  <meta name="description" content="{{SITE_DESCRIPTION}}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header>
+    <h1>{{SITE_TITLE}}</h1>
+    <p>{{SITE_DESCRIPTION}}</p>
+  </header>
+  <main>
+    <!-- URL一覧テーブル/カード -->
+    <section id="url-list">
+      <!-- 検索・フィルターUI -->
+      <input type="text" id="search" placeholder="検索...">
+      <!-- 一覧表示エリア（テンプレートエンジンで展開） -->
+      {{URL_LIST}}
+    </section>
+    <!-- 統計情報 -->
+    <section id="stats">
+      <p>総URL数: {{URL_COUNT}}</p>
+      <!-- カテゴリ別統計など -->
+      {{CATEGORY_STATS}}
+    </section>
+  </main>
+  <footer>
+    <small>&copy; {{YEAR}} <a href="{{GITHUB_URL}}">GitHub</a></small>
+  </footer>
+  <!-- データ埋め込みエリア -->
+  <script id="urls-data" type="application/json">{{URLS_JSON}}</script>
+  <script src="/assets/js/index.js"></script>
+</body>
+</html>

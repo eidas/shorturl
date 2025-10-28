@@ -1,0 +1,6 @@
+<!-- list.hbs: 短縮URLリスト表示用 Handlebars テンプレート雛形 -->
+<ul>
+  {{#each urls}}
+    <li><a href="{{this.url}}">{{this.key}}</a></li>
+  {{/each}}
+</ul>
