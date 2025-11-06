@@ -412,62 +412,62 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
 ## フェーズ9: GitHub Actionsワークフローの実装
 
 ### タスク9.1: deploy.ymlの作成
-- [ ] .github/workflows/deploy.ymlファイルの作成
-- [ ] YAML基本構造の定義
+- [x] .github/workflows/deploy.ymlファイルの作成
+- [x] YAML基本構造の定義
   - name, on, jobs等
 
 ### タスク9.2: トリガー設定
-- [ ] プッシュトリガーの設定
+- [x] プッシュトリガーの設定
   - mainブランチへのプッシュ
   - config/urls.jsonの変更検知
-- [ ] 手動トリガー設定
+- [x] 手動トリガー設定
   - workflow_dispatchイベント
 
 ### タスク9.3: チェックアウトジョブ
-- [ ] actions/checkout@v3の設定
-- [ ] リポジトリのクローン設定
+- [x] actions/checkout@v3の設定
+- [x] リポジトリのクローン設定
 
 ### タスク9.4: Node.js環境セットアップ
-- [ ] actions/setup-node@v3の設定
-- [ ] Node.jsバージョンの指定（18.x推奨）
-- [ ] npmキャッシュの設定
+- [x] actions/setup-node@v3の設定
+- [x] Node.jsバージョンの指定（18.x推奨）
+- [x] npmキャッシュの設定
 
 ### タスク9.5: 依存関係インストール
-- [ ] npm installステップの追加
-- [ ] キャッシュの活用
+- [x] npm installステップの追加
+- [x] キャッシュの活用
 
 ### タスク9.6: バリデーションステップ
-- [ ] validator.jsの実行
-- [ ] バリデーション失敗時のワークフロー停止
+- [x] validator.jsの実行
+- [x] バリデーション失敗時のワークフロー停止
 
 ### タスク9.7: ビルドステップ
-- [ ] generator.jsの実行
-- [ ] ビルドログの出力
-- [ ] ビルド失敗時のエラーハンドリング
+- [x] generator.jsの実行
+- [x] ビルドログの出力
+- [x] ビルド失敗時のエラーハンドリング
 
 ### タスク9.8: テストステップ
-- [ ] npm testの実行
-- [ ] テスト失敗時のワークフロー停止
-- [ ] HTMLバリデーション（オプション）
-- [ ] リンク切れチェック（オプション）
+- [x] npm testの実行
+- [x] テスト失敗時のワークフロー停止
+- [x] HTMLバリデーション（オプション）
+- [x] リンク切れチェック（オプション）
 
 ### タスク9.9: デプロイステップ
-- [ ] GitHub Pagesデプロイアクションの設定
+- [x] GitHub Pagesデプロイアクションの設定
   - peaceiris/actions-gh-pages@v3 推奨
-- [ ] デプロイ設定
+- [x] デプロイ設定
   - publish_dir: docs
   - github_token: ${{ secrets.GITHUB_TOKEN }}
   - publish_branch: gh-pages
-- [ ] CNAME設定（カスタムドメイン使用時）
+- [x] CNAME設定（カスタムドメイン使用時）
   - CNAMEファイルの生成と配置
 
 ### タスク9.10: 通知ステップ（オプション）
-- [ ] ビルド成功/失敗通知の設定
-- [ ] Slackまたは他の通知サービスとの連携
+- [x] ビルド成功/失敗通知の設定
+- [x] Slackまたは他の通知サービスとの連携
 
 ### タスク9.11: 環境変数とシークレット
-- [ ] 必要な環境変数の定義
-- [ ] GitHubシークレットの設定方法ドキュメント化
+- [x] 必要な環境変数の定義
+- [x] GitHubシークレットの設定方法ドキュメント化
   - GA_ID等（オプション）
 
 ---
