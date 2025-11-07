@@ -596,8 +596,8 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
 ## フェーズ13: GitHubリポジトリへのプッシュ
 
 ### タスク13.1: 初回コミット
-- [ ] git addで全ファイルをステージング
-- [ ] git commitで初回コミット
+- [x] git addで全ファイルをステージング
+- [x] git commitで初回コミット
   - コミットメッセージ: "Initial commit: Project setup and implementation"
 
 ### タスク13.2: リモートリポジトリの設定
