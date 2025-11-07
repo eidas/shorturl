@@ -1,20 +1,20 @@
 {
   "site": {
-    "title": "短縮URLサービス",
-    "description": "GitHub Pages上で動作する静的な短縮URLサービスのデモ",
-    "baseUrl": "https://eidas.github.io/shorturl/",
+    "title": "ShortURL - 短縮URLサービス",
+    "description": "短縮URLを簡単に作成・管理できるサービスです。",
+    "baseUrl": "https://shorturl.example.com/",
     "author": "eidas",
     "analytics": {
-      "googleAnalyticsId": "",
-      "enabled": false
+      "googleAnalyticsId": "UA-12345678-9",
+      "enabled": true
     },
     "theme": {
-      "primaryColor": "#1976d2",
-      "backgroundColor": "#f5f5f5"
+      "primaryColor": "#4CAF50",
+      "backgroundColor": "#FFFFFF"
     },
     "features": {
       "showUrlList": true,
-      "enableQrCode": false
+      "enableQrCode": true
     }
   }
 }

@@ -35,6 +35,18 @@
         "image": "https://via.placeholder.com/150",
         "customRedirectDelay": 2
       }
+    },
+    "demo": {
+      "url": "https://demo.shorturl.com/",
+      "description": "デモ用短縮URL",
+      "created": "2025-11-07T00:00:00Z",
+      "tags": ["デモ"],
+      "enabled": true,
+      "metadata": {
+        "title": "Demo",
+        "image": "https://via.placeholder.com/150",
+        "customRedirectDelay": 1
+      }
     }
   }
 }
