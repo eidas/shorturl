@@ -31,8 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /**
  * URL一覧の描画
- * @param {Array} urls
- * @param {string} keyword
+ * @param {Array} urls - URLデータの配列
+ * @param {string} keyword - フィルタリング用のキーワード
+ * @returns {void}
  */
 function renderList(urls, keyword) {
   const listArea = document.getElementById('url-list');

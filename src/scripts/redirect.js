@@ -4,6 +4,7 @@
  * 指定URLへ遅延リダイレクトを実行
  * @param {string} targetUrl - リダイレクト先URL
  * @param {number} delay - 遅延ミリ秒（デフォルト0）
+ * @returns {void}
  */
 function redirectTo(targetUrl, delay = 0) {
   try {
@@ -20,7 +21,8 @@ function redirectTo(targetUrl, delay = 0) {
 
 /**
  * カウントダウン表示
- * @param {number} delay
+ * @param {number} delay - 遅延時間（ミリ秒）
+ * @returns {void}
  */
 function showCountdown(delay) {
   const msg = document.getElementById('redirect-message');
@@ -39,6 +41,9 @@ function showCountdown(delay) {
 
 /**
  * アナリティクスイベント送信（ダミー）
+ * @param {string} event - イベント名
+ * @param {string} url - 対象URL
+ * @returns {void}
  */
 function sendAnalyticsEvent(event, url) {
   // Google Analytics等のイベント送信処理をここに実装
@@ -47,6 +52,8 @@ function sendAnalyticsEvent(event, url) {
 
 /**
  * エラー表示
+ * @param {string} msg - エラーメッセージ
+ * @returns {void}
  */
 function showError(msg) {
   alert('リダイレクトエラー: ' + msg);

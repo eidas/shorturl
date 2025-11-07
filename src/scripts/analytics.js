@@ -3,6 +3,7 @@
 /**
  * Google Analyticsの初期化
  * @param {string} trackingId - トラッキングID
+ * @returns {void}
  */
 function initAnalytics(trackingId) {
   if (!trackingId) return;
@@ -20,6 +21,7 @@ function initAnalytics(trackingId) {
 
 /**
  * ページビュー送信
+ * @returns {void}
  */
 function sendPageView() {
   if (typeof gtag === 'function') {
@@ -29,8 +31,9 @@ function sendPageView() {
 
 /**
  * カスタムイベント送信
- * @param {string} eventName
- * @param {object} params
+ * @param {string} eventName - イベント名
+ * @param {object} params - イベントパラメータ
+ * @returns {void}
  */
 function sendCustomEvent(eventName, params = {}) {
   if (typeof gtag === 'function') {
