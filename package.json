@@ -4,9 +4,11 @@
   "description": "GitHub Pages上で動作する静的な短縮URLサービス",
   "main": "index.js",
   "scripts": {
-  "test": "jest",
-  "test:watch": "jest --watchAll",
-  "test:coverage": "jest --coverage"
+    "validate": "node build/validator.js",
+    "build": "node build/generator.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "shorturl",
