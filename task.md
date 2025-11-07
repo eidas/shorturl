@@ -609,6 +609,11 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
 - [ ] Pages設定を開く
 - [ ] ソースブランチをgh-pagesに設定
 - [ ] 保存
+### タスク13.3: GitHub Pagesの有効化
+- [x] GitHubリポジトリ設定画面を開く
+- [x] Pages設定を開く
+- [x] ソースブランチをgh-pagesに設定
+- [x] 保存
 
 ---
 
