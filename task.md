@@ -636,10 +636,10 @@ GitHub Pages上で動作する静的な短縮URLサービスの実装タスク
 - [ ] 修正とリトライ
 
 ### タスク14.3: デプロイ成功確認
-- [ ] gh-pagesブランチの作成確認
-- [ ] GitHub Pagesサイトへのアクセス
-  - https://[username].github.io/shorturl/
-- [ ] 本番環境での動作確認
+-- [x] gh-pagesブランチの作成確認
+-- [ ] GitHub Pagesサイトへのアクセス
+  - https://[username].github.io/shorturl/  # 注意: リモートへのアクセスはここでは未チェック。push と公開設定の確認が必要
+-- [ ] 本番環境での動作確認
 
 ---
 
